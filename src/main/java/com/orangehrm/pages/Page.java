@@ -1,13 +1,13 @@
 package com.orangehrm.pages;
 
-//import org.openqa.selenium.By;
+
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
  
 public class Page {
 	
 	//String currentPageURL = driver.getCurrentUrl();
-	//String actualMsg = driver.getActualMsg();
+
 	
 	protected static WebDriver driver;
 	
@@ -15,7 +15,7 @@ public class Page {
 		Page.driver = driver;
 	}
 	
-	// TODO: check if this needed
+	// might remove if not needed
 	/*
 	 * public String getActualMsg() { return
 	 * driver.findElement(actualMsg).getText(); }

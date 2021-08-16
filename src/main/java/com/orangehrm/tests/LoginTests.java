@@ -3,7 +3,6 @@ package com.orangehrm.tests;
 import com.orangehrm.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-//import org.testng.annotations.Test;
 //import org.testng.asserts.SoftAssert;
 //import org.testng.Reporter;
 //import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,22 +13,25 @@ import org.testng.annotations.Test;
 
 public class LoginTests extends Automation {
 	
+	// Tests 1 and 2 are interchangeable, but can't be run after Test 3, the successful login; 
+	// So considering putting negative tests in separate class or doing complete teardown with each test...looking for best practice
 
-	@Test (priority=2, enabled=true)
+
+	@Test (priority=1, enabled=true)
 	public void testLoginEmptyUsername() {		
 	
 		LoginPage tester = new LoginPage(); {
-			// verify login is prevented with empty username 
-			// intentionally not entering username
+			// verifies login is prevented with empty username 
+			// removes step: tester.enterUsername();
 			tester.enterPassword();
 			tester.clickLoginBtn();
 			String actualMsg = tester.getActualMsg();			
-			Assert.assertTrue(actualMsg.contains("Username cannot be empty"), "If username is left empty, displaying wrong message: '" + actualMsg + "' instead of the expected message: 'Username cannot be empty';");
+			Assert.assertTrue(actualMsg.contains("Username cannot be empty"), "Displaying wrong message: '" + actualMsg + "' instead of the expected message: 'Username cannot be empty';");
 			tester.clearFields();
 		}		
 	}
 		
-	@Test (priority=1, enabled=true)
+	@Test (priority=2, enabled=true)
 	public void testLoginBadPassword() {		
 	
 		LoginPage tester = new LoginPage(); {
@@ -39,10 +41,12 @@ public class LoginTests extends Automation {
 			tester.clickLoginBtn();
 			String actualMsg = tester.getActualMsg();			
 			//Assert.assertEquals(actualMsg,"Invalid credentials");
-			Assert.assertTrue(actualMsg.contains("Invalid credentials"), "After invalid login, displaying wrong message: '" + actualMsg + "' instead of the expected message: 'Invalid credentials';");
+			Assert.assertTrue(actualMsg.contains("Invalid credentials"), "Displaying wrong message: '" + actualMsg + "' instead of the expected message: 'Invalid credentials';");
 			tester.clearFields();
 		}		
 	}
+	
+	
 	
 	@Test (priority=3, enabled=true)
 	public void testLogin() throws InterruptedException {
