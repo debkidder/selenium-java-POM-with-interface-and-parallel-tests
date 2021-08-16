@@ -9,8 +9,8 @@ public class ConfigReader {
 
     //public String browserName;
     public String configURL;
-    //public String username1;
-    //public String password1;
+    public String username1;
+    public String password1;
     public Properties prop;
 
     public ConfigReader() {
@@ -21,8 +21,8 @@ public class ConfigReader {
 
             //browserName = prop.getProperty("Browser");
             configURL = prop.getProperty("URL");
-            //username1 = prop.getProperty("User1");
-            //password1 = prop.getProperty("Password1");
+            username1 = prop.getProperty("Username1");
+            password1 = prop.getProperty("Password1");
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -31,9 +31,17 @@ public class ConfigReader {
         }
     }
     
-    // can verify results in ConfigChecker class
+    // can quickly test in ConfigChecker class
     public String getConfigURL() {
     	return configURL;
+    }
+    
+    public String getUsername1() {
+    	return username1;
+    }
+    
+    public String getPassword1() {
+    	return password1;
     }
 
 }

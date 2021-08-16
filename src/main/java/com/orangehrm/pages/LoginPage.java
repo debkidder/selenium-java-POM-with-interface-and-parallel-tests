@@ -2,8 +2,20 @@ package com.orangehrm.pages;
 
 import org.openqa.selenium.By;
 //import org.openqa.selenium.WebDriver;
+
+import com.orangehrm.configs.ConfigReader;
  
 public class LoginPage extends Page {
+	
+	//+++++++++++++
+	
+	protected String username1;
+	protected String password1;
+
+	ConfigReader reader = new ConfigReader();
+
+	
+	//+++++++++++++
 	
 	// locators
 	By username=By.id("txtUsername");
@@ -13,11 +25,15 @@ public class LoginPage extends Page {
 		
 	
 	public void enterUsername() {		
-		driver.findElement(username).sendKeys("Admin");					
+		//driver.findElement(username).sendKeys("Admin");	
+		driver.findElement(username).sendKeys(reader.username1);
+		//driver.findElement(username).sendKeys(reader.getUsername1());
 	}	
 	
 	public void enterPassword() {		
-		driver.findElement(password).sendKeys("admin123");				
+		//driver.findElement(password).sendKeys("admin123");	
+		driver.findElement(password).sendKeys(reader.password1);
+		//driver.findElement(password).sendKeys(reader.getPassword1());
 	}	
 	
 	public void enterBadPassword() {

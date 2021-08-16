@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-16T02:06:42Z" name="Default suite" finished-at="2021-08-16T02:06:57Z" duration-ms="14432">
+  <suite started-at="2021-08-16T05:40:00Z" name="Default suite" finished-at="2021-08-16T05:40:13Z" duration-ms="13172">
     <groups>
     </groups>
-    <test started-at="2021-08-16T02:06:42Z" name="Default test" finished-at="2021-08-16T02:06:57Z" duration-ms="14432">
+    <test started-at="2021-08-16T05:40:00Z" name="Default test" finished-at="2021-08-16T05:40:13Z" duration-ms="13172">
       <class name="com.orangehrm.tests.LoginTests">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T20:06:42Z" name="launchApplication" finished-at="2021-08-15T20:06:50Z" duration-ms="7472" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:00Z" name="launchApplication" finished-at="2021-08-15T23:40:06Z" duration-ms="6419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="testLoginEmptyUsername()[pri:1, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T20:06:50Z" name="testLoginEmptyUsername" finished-at="2021-08-15T20:06:51Z" duration-ms="1039" status="PASS">
+        <test-method signature="testLoginEmptyUsername()[pri:1, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:06Z" name="testLoginEmptyUsername" finished-at="2021-08-15T23:40:08Z" duration-ms="1166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginEmptyUsername -->
-        <test-method signature="testLoginBadPassword()[pri:2, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T20:06:51Z" name="testLoginBadPassword" finished-at="2021-08-15T20:06:53Z" duration-ms="1943" status="PASS">
+        <test-method signature="testLoginBadPassword()[pri:2, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:08Z" name="testLoginBadPassword" finished-at="2021-08-15T23:40:09Z" duration-ms="1860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginBadPassword -->
-        <test-method signature="testLogin()[pri:3, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T20:06:53Z" name="testLogin" finished-at="2021-08-15T20:06:55Z" duration-ms="2041" status="PASS">
+        <test-method signature="testLogin()[pri:3, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:09Z" name="testLogin" finished-at="2021-08-15T23:40:11Z" duration-ms="1853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T20:06:55Z" name="closeBrowser" finished-at="2021-08-15T20:06:57Z" duration-ms="1886" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:11Z" name="closeBrowser" finished-at="2021-08-15T23:40:13Z" duration-ms="1814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

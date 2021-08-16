@@ -14,14 +14,14 @@ public class Automation {
 	private static WebDriver webDriver;
 	protected static Page autoPage;
 	
-	// If using the config 
+	// Config URL approach part 1 (if using the config approach w/config.properties file, ConfigReader class, getConfigURL method, and configURL) 
 	protected String configURL;
 
-	
-	// Can set URL using the config file (I wanted to learn how to read from the config file, but it's a little slower)
+	// Config URL approach part 2
 	ConfigReader reader = new ConfigReader();
 	
-	// Use this instead of above if wanting to hardcode 
+	// OR disable the above Config approach (part 1, 2, and 3) and enable this
+	// Hardcoded URL approach part 1: 
 	///private String applicationURL = "https://opensource-demo.orangehrmlive.com/";
 	
  
@@ -30,8 +30,10 @@ public class Automation {
 		setChromeDriverProperty();
 		webDriver = new ChromeDriver();
 		webDriver.manage().window().maximize();
+		// Config URL approach part 3
 		webDriver.get(reader.configURL);
-		// Use this instead of above if wanting to hardcode
+		// OR disable the above and enable this
+		// Hardcoded URL approach part 2:
 		///webDriver.get(applicationURL);
 		autoPage = new Page();
 		autoPage.setWebDriver(webDriver);

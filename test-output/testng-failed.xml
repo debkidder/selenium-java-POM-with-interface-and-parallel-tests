@@ -8,7 +8,7 @@
           <include name="launchApplication"/>
           <include name="closeBrowser"/>
           <include name="testLoginEmptyUsername"/>
-          <include name="testLoginBadPassword"/>
+          <include name="testLogin"/>
         </methods>
       </class> <!-- com.orangehrm.tests.LoginTests -->
     </classes>
