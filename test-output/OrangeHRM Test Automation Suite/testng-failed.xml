@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [OrangeHRM Test Automation Suite]" guice-stage="DEVELOPMENT">
+  <test name="OrangeHRM Regression Test Cases(failed)">
+    <classes>
+      <class name="com.orange.tests.LoginTests">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="negTestLoginEmptyUsername"/>
+          <include name="negTestLoginBadPassword"/>
+          <include name="tearDown"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.orange.tests.LoginTests -->
+    </classes>
+  </test> <!-- OrangeHRM Regression Test Cases(failed) -->
+</suite> <!-- Failed suite [OrangeHRM Test Automation Suite] -->

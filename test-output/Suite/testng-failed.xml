@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test parallel="methods" name="FF - Password Reset Tests(failed)" verbose="3">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="com.orange.tests.PasswordResetTests">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="tearDown"/>
+          <include name="testResetSubmission"/>
+        </methods>
+      </class> <!-- com.orange.tests.PasswordResetTests -->
+    </classes>
+  </test> <!-- FF - Password Reset Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

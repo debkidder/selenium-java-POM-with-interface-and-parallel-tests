@@ -1,33 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-16T05:40:00Z" name="Default suite" finished-at="2021-08-16T05:40:13Z" duration-ms="13172">
+  <suite started-at="2021-09-08T00:47:05Z" name="Suite" finished-at="2021-09-08T00:47:48Z" duration-ms="42209">
     <groups>
     </groups>
-    <test started-at="2021-08-16T05:40:00Z" name="Default test" finished-at="2021-08-16T05:40:13Z" duration-ms="13172">
-      <class name="com.orangehrm.tests.LoginTests">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:00Z" name="launchApplication" finished-at="2021-08-15T23:40:06Z" duration-ms="6419" status="PASS">
+    <test started-at="2021-09-08T00:47:05Z" name="Chrome - Login Tests" finished-at="2021-09-08T00:47:17Z" duration-ms="11089">
+      <class name="com.orange.tests.LoginTests">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:com.orange.tests.LoginTests@f79e]" started-at="2021-09-07T18:47:05Z" name="setUpTest" finished-at="2021-09-07T18:47:12Z" duration-ms="6274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="testLoginEmptyUsername()[pri:1, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:06Z" name="testLoginEmptyUsername" finished-at="2021-08-15T23:40:08Z" duration-ms="1166" status="PASS">
+        </test-method> <!-- setUpTest -->
+        <test-method signature="negTestLoginEmptyUsername()[pri:1, instance:com.orange.tests.LoginTests@f79e]" started-at="2021-09-07T18:47:12Z" name="negTestLoginEmptyUsername" finished-at="2021-09-07T18:47:12Z" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginEmptyUsername -->
-        <test-method signature="testLoginBadPassword()[pri:2, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:08Z" name="testLoginBadPassword" finished-at="2021-08-15T23:40:09Z" duration-ms="1860" status="PASS">
+        </test-method> <!-- negTestLoginEmptyUsername -->
+        <test-method signature="negTestLoginBadPassword()[pri:2, instance:com.orange.tests.LoginTests@f79e]" started-at="2021-09-07T18:47:12Z" name="negTestLoginBadPassword" finished-at="2021-09-07T18:47:13Z" duration-ms="1164" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginBadPassword -->
-        <test-method signature="testLogin()[pri:3, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:09Z" name="testLogin" finished-at="2021-08-15T23:40:11Z" duration-ms="1853" status="PASS">
+        </test-method> <!-- negTestLoginBadPassword -->
+        <test-method signature="testLogin()[pri:3, instance:com.orange.tests.LoginTests@f79e]" started-at="2021-09-07T18:47:13Z" name="testLogin" finished-at="2021-09-07T18:47:15Z" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.orangehrm.tests.LoginTests@58594a11]" started-at="2021-08-15T23:40:11Z" name="closeBrowser" finished-at="2021-08-15T23:40:13Z" duration-ms="1814" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orange.tests.LoginTests@f79e]" started-at="2021-09-07T18:47:15Z" name="tearDown" finished-at="2021-09-07T18:47:17Z" duration-ms="1132" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.orangehrm.tests.LoginTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orange.tests.LoginTests -->
+    </test> <!-- Chrome - Login Tests -->
+    <test started-at="2021-09-08T00:47:17Z" name="Chrome - Password Reset Tests" finished-at="2021-09-08T00:47:23Z" duration-ms="6868">
+      <class name="com.orange.tests.PasswordResetTests">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:com.orange.tests.PasswordResetTests@68267da0]" started-at="2021-09-07T18:47:17Z" name="setUpTest" finished-at="2021-09-07T18:47:21Z" duration-ms="4575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testResetLinkEnabled()[pri:1, instance:com.orange.tests.PasswordResetTests@68267da0]" started-at="2021-09-07T18:47:21Z" name="testResetLinkEnabled" finished-at="2021-09-07T18:47:22Z" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetLinkEnabled -->
+        <test-method signature="testResetSubmission()[pri:2, instance:com.orange.tests.PasswordResetTests@68267da0]" started-at="2021-09-07T18:47:22Z" name="testResetSubmission" finished-at="2021-09-07T18:47:22Z" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetSubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orange.tests.PasswordResetTests@68267da0]" started-at="2021-09-07T18:47:22Z" name="tearDown" finished-at="2021-09-07T18:47:23Z" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orange.tests.PasswordResetTests -->
+    </test> <!-- Chrome - Password Reset Tests -->
+    <test started-at="2021-09-08T00:47:23Z" name="FF - Login Tests" finished-at="2021-09-08T00:47:37Z" duration-ms="13418">
+      <class name="com.orange.tests.LoginTests">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:com.orange.tests.LoginTests@623a8092]" started-at="2021-09-07T18:47:23Z" name="setUpTest" finished-at="2021-09-07T18:47:32Z" duration-ms="8848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="negTestLoginEmptyUsername()[pri:1, instance:com.orange.tests.LoginTests@623a8092]" started-at="2021-09-07T18:47:32Z" name="negTestLoginEmptyUsername" finished-at="2021-09-07T18:47:33Z" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negTestLoginEmptyUsername -->
+        <test-method signature="negTestLoginBadPassword()[pri:2, instance:com.orange.tests.LoginTests@623a8092]" started-at="2021-09-07T18:47:33Z" name="negTestLoginBadPassword" finished-at="2021-09-07T18:47:34Z" duration-ms="959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negTestLoginBadPassword -->
+        <test-method signature="testLogin()[pri:3, instance:com.orange.tests.LoginTests@623a8092]" started-at="2021-09-07T18:47:34Z" name="testLogin" finished-at="2021-09-07T18:47:35Z" duration-ms="1660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orange.tests.LoginTests@623a8092]" started-at="2021-09-07T18:47:35Z" name="tearDown" finished-at="2021-09-07T18:47:37Z" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orange.tests.LoginTests -->
+    </test> <!-- FF - Login Tests -->
+    <test started-at="2021-09-08T00:47:37Z" name="FF - Password Reset Tests" finished-at="2021-09-08T00:47:48Z" duration-ms="10745">
+      <class name="com.orange.tests.PasswordResetTests">
+        <test-method is-config="true" signature="setUpTest(java.lang.String)[pri:0, instance:com.orange.tests.PasswordResetTests@57250572]" started-at="2021-09-07T18:47:37Z" name="setUpTest" finished-at="2021-09-07T18:47:45Z" duration-ms="8104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testResetLinkEnabled()[pri:1, instance:com.orange.tests.PasswordResetTests@57250572]" started-at="2021-09-07T18:47:45Z" name="testResetLinkEnabled" finished-at="2021-09-07T18:47:46Z" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetLinkEnabled -->
+        <test-method signature="testResetSubmission()[pri:2, instance:com.orange.tests.PasswordResetTests@57250572]" started-at="2021-09-07T18:47:46Z" name="testResetSubmission" finished-at="2021-09-07T18:47:46Z" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResetSubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orange.tests.PasswordResetTests@57250572]" started-at="2021-09-07T18:47:46Z" name="tearDown" finished-at="2021-09-07T18:47:48Z" duration-ms="1398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orange.tests.PasswordResetTests -->
+    </test> <!-- FF - Password Reset Tests -->
+  </suite> <!-- Suite -->
 </testng-results>
