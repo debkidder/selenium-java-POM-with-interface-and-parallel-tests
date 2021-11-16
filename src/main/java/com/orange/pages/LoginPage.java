@@ -19,7 +19,7 @@ public class LoginPage extends BasePage implements TrackingURL{
 	// locators
 	By usernameField=By.id("txtUsername");
 	By passwordField=By.xpath("//input[@id='txtPassword']");
-	By loginButton=By.name("Submit");
+	By loginButton=By.id("btnLogin");
 	By actualMsg=By.xpath(".//*[@id=\'spanMessage\']");
 	By loginPanel=By.xpath("//*[@id='logInPanelHeading']");
 	By forgotPasswordLink=By.xpath("//a[normalize-space()='Forgot your password?']");

@@ -17,7 +17,7 @@ public class PasswordResetPage extends BasePage implements TrackingURL {
 
 	// locators
 	By forgotPasswordPanel=By.xpath("//h1[normalize-space()='Forgot Your Password?']");
-	By usernameAuthField=By.name("securityAuthentication[userName]");
+	By usernameAuthField=By.id("securityAuthentication_userName");
 	By resetPasswordButton=By.id("btnSearchValues");
 	By actualMsg=By.xpath("//h1[contains(text(),'Instruction Sent !')]");
 
